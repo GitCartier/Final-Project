@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jay's Frenzied Fitness - About Us</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/slideshow.js" defer></script>
+  <style>
+    /* Inline CSS for About Us section background */
+    .about {
+      background-image: url('images/about-us-bg.jpeg');
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh; /* Ensure it covers the entire height of the screen */
+      padding: 50px;
+      color: #fff;
+      text-align: center;
+    }
+
+    .about-text {
+      font-size: 16px;
+      font-weight: bold;
+      font-family: 'Dancing Script', cursive;
+      color: black;
+      line-height: 1.6;
+    }
+
+    /* Slideshow Styling */
+    #slideshow {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+
+    #slideshow img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+
+    /* Features Section */
+    .features {
+      padding: 50px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    .features h2 {
+      margin-bottom: 30px;
+      font-size: 2em;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .features-grid div {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .features-grid img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .features-grid h3 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .features-grid p {
+      font-size: 1em;
+      color: #555;
+    }
+
+    /* Map Section */
+    .map {
+      padding: 50px;
+      text-align: center;
+    }
+
+    /* Footer Styling */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: white;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 1em;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .features-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html" class="active">About Us</a></li>
+        <li><a href="membership.html">Membership Form</a></li>
+        <li><a href="creativity.html">Creativity</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="about">
+    <h1>Welcome to Jay's Frenzied Fitness!</h1>
+    <p class="about-text">
+      Founded by CEO James Heckstall, our gym is not just a place to work out—it's a community. We are deeply committed to helping individuals of all fitness levels achieve their health and wellness goals. Whether you're a seasoned athlete or just starting your fitness journey, we offer the support, motivation, and expert guidance you need to succeed.
+    </p>
+    <p class="about-text">
+      At Jay's Frenzied Fitness, we believe that fitness should be accessible to everyone, regardless of their budget. That's why we offer affordable membership plans tailored to fit various lifestyles and financial situations. We understand that time is valuable, so our flexible hours and convenient locations make it easier than ever to prioritize your health, no matter how busy life gets.
+    </p>
+    <p class="about-text">
+      Our state-of-the-art equipment, experienced trainers, and welcoming atmosphere are all part of our mission to provide you with the best possible fitness experience. Join us today and see why Jay's Frenzied Fitness is more than just a gym—it's a place where you can truly thrive.
+    </p>
+    <div id="slideshow" class="slideshow">
+      <img src="images/slideshow1.jpeg" alt="Gym Facility">
+      <img src="images/slideshow2.jpeg" alt="Group Class">
+      <img src="images/slideshow3.jpeg" alt="Workout Session">
+      <img src="images/slideshow4.jpeg" alt="Yoga Class">
+      <img src="images/slideshow5.jpeg" alt="Cardio Class">
+    </div>
+  </section>
+  
+  <section class="features">
+    <h2>Our Features</h2>
+    <div class="features-grid">
+      <div>
+        <img src="images/yoga-class.jpeg" alt="Yoga Class">
+        <h3>Kettlebell Yoga</h3>
+        <p>A fusion of strength training and flexibility through yoga movements, with added resistance using kettlebells.</p>
+      </div>
+      <div>
+        <img src="images/cardio-class.jpeg" alt="Cardio Class">
+        <h3>Aerial Boxing</h3>
+        <p>Boxing meets aerial arts! Build core strength while practicing punches and combos suspended in the air.</p>
+      </div>
+      <div>
+        <img src="images/dance-hiit.jpeg" alt="Dance HIIT">
+        <h3>Dance HIIT</h3>
+        <p>A high-energy combination of dance choreography and high-intensity interval training.</p>
+      </div>
+      <div>
+        <img src="images/virtual-reality.jpeg" alt="Virtual Reality Workouts">
+        <h3>Virtual Reality Workouts</h3>
+        <p>Experience immersive and futuristic workouts with our Virtual Reality technology.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="map">
+    <h2>Find Us</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=..."
+      width="600"
+      height="450"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"></iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Jay's Frenzied Fitness. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,161 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+  }
+  
+  /* Header and Navigation */
+  header {
+    background: #000;
+    padding: 10px 20px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar ul li {
+    margin: 0 15px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar ul li a:hover,
+  .navbar ul li a.active {
+    color: #f39c12;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('images/gym-background.jpeg') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+  }
+  
+  /* Section Styles */
+  section {
+    padding: 50px 20px;
+  }
+  
+  /* About Us Section */
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .about img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .about-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  /* Membership Form */
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  form input,
+  form select,
+  form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background: #f39c12;
+    color: #fff;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  form button:hover {
+    background: #d35400;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #fff;
+    font-size: 1em;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Slideshow Styling */
+  .slideshow img {
+    display: none;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+    }
+  
+    .navbar ul li {
+      margin-bottom: 10px;
+    }
+  
+    .hero {
+      height: 300px;
+    }
+  }
+  
